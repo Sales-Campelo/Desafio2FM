@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Blog preview card</title>
+
+ 
+  <style>
+    /* ESTRUTURA GERAL DO CSS */
+    * {box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    /* PADRONIZAÇAO DO CORPO */
+    body { display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:"Figtree", sans-serif; ;
+      background-color: hsl(47, 88%, 63%);
+    }
+    /* ESTILIZAÇAO DO CARTÃO */
+    .card { font-size: 14px; text-align: center; 
+      background-color: #ffffff;
+    padding: 30px;
+    border-top: 1px solid black;
+    border-right: 8px solid black;
+    border-bottom: 8px solid black;
+    border-left: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 350px;
+    }
+    /* ESTILIZAÇAO DA IMAGEM PRINCIPAL */
+    .card img {
+      width: 100%;
+    border-radius: 10px;
+      margin-bottom:10px ;
+    }
+    /* ESTILIZAÇAO DA PROGRESSÃO */
+    .learning {
+      width: fit-content;
+      padding: 5px;
+      background-color:hsl(47, 88%, 63%) ;
+      text-align: left;
+      border: #ffffff;
+      border-radius: 10px;
+      margin-bottom: 10px;
+
+    }
+    /* ESTILIZAÇAO DA DATA */
+    .publi {
+      text-align: left;
+      margin: 10px 0 20px 0;
+    }
+    /* ESTILIZAÇAO DO TEMA */
+    h1 {
+      text-align: left;
+      margin: 10px 0 20px 0;
+    }
+    /* ESTILIZAÇAO DO TEXTO */
+    .text {
+      text-align: left;
+      line-height: 20px;
+      width: 300px;
+    }
+    /* ESTILIZAÇAO DA FOTO DE PERFIL */
+    .avatar {
+      display: flex;
+      width: 45px;
+    }
+    .avatar img {
+      margin: 0 10px 8px 0;
+    }
+    /* ESTILIZAÇAO DO NOME DO DONO DO BLOG */
+    .avatar h5 {
+      white-space: nowrap;
+      text-align: center;
+      margin-top: 15px;
+    }
+    .card a { color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    }
+
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="./assets/images/illustration-article.svg" alt="inlustraçao">
+    <p class="learning">Learning</p>
+    <h5 class="publi">Published 21 Dec 2023</h5>
+    <h1>HTML & CSS foundations
+    </h1>
+    <p class="text">These languages are the backbone of every website, defining structure, content, and presentation.
+    </p><br>
+    <div class="avatar">
+    <img src="./assets/images/image-avatar.webp" alt="avatar">
+    <a href=""> <h5>Greg Hooper</h5></a>
+  </div>
+  
+</body>
+</html>
